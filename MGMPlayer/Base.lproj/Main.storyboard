@@ -26,6 +26,12 @@
                                     <constraint firstAttribute="height" constant="300" id="QW2-9l-nVB"/>
                                     <constraint firstAttribute="width" constant="300" id="xf6-8C-4Vq"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="150"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="yKe-rh-u5y">
                                 <rect key="frame" x="37.5" y="424" width="300" height="2"/>

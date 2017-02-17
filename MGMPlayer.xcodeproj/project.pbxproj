@@ -13,6 +13,11 @@
 		2413E9FC1E57263600163F6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2413E9FA1E57263600163F6D /* Main.storyboard */; };
 		2413E9FE1E57263600163F6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2413E9FD1E57263600163F6D /* Assets.xcassets */; };
 		2413EA011E57263600163F6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2413E9FF1E57263600163F6D /* LaunchScreen.storyboard */; };
+		2413EA0C1E57319600163F6D /* o2ma100.ojm in Resources */ = {isa = PBXBuildFile; fileRef = 2413EA0A1E57319600163F6D /* o2ma100.ojm */; };
+		2413EA0D1E57319600163F6D /* o2ma100.ojn in Resources */ = {isa = PBXBuildFile; fileRef = 2413EA0B1E57319600163F6D /* o2ma100.ojn */; };
+		2413EA101E57332900163F6D /* MGOJNDecode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2413EA0F1E57332900163F6D /* MGOJNDecode.m */; };
+		2413EA131E57335300163F6D /* MGOJNHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2413EA121E57335300163F6D /* MGOJNHeader.m */; };
+		2413EA161E5735EC00163F6D /* MGOJMHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2413EA151E5735EC00163F6D /* MGOJMHeader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,14 @@
 		2413E9FD1E57263600163F6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2413EA001E57263600163F6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2413EA021E57263600163F6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2413EA0A1E57319600163F6D /* o2ma100.ojm */ = {isa = PBXFileReference; lastKnownFileType = file; path = o2ma100.ojm; sourceTree = "<group>"; };
+		2413EA0B1E57319600163F6D /* o2ma100.ojn */ = {isa = PBXFileReference; lastKnownFileType = file; path = o2ma100.ojn; sourceTree = "<group>"; };
+		2413EA0E1E57332900163F6D /* MGOJNDecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGOJNDecode.h; sourceTree = "<group>"; };
+		2413EA0F1E57332900163F6D /* MGOJNDecode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGOJNDecode.m; sourceTree = "<group>"; };
+		2413EA111E57335300163F6D /* MGOJNHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGOJNHeader.h; sourceTree = "<group>"; };
+		2413EA121E57335300163F6D /* MGOJNHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGOJNHeader.m; sourceTree = "<group>"; };
+		2413EA141E5735EC00163F6D /* MGOJMHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGOJMHeader.h; sourceTree = "<group>"; };
+		2413EA151E5735EC00163F6D /* MGOJMHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGOJMHeader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +73,10 @@
 			children = (
 				2413E9F41E57263600163F6D /* AppDelegate.h */,
 				2413E9F51E57263600163F6D /* AppDelegate.m */,
+				2413EA0E1E57332900163F6D /* MGOJNDecode.h */,
+				2413EA0F1E57332900163F6D /* MGOJNDecode.m */,
+				2413EA111E57335300163F6D /* MGOJNHeader.h */,
+				2413EA121E57335300163F6D /* MGOJNHeader.m */,
 				2413E9F71E57263600163F6D /* ViewController.h */,
 				2413E9F81E57263600163F6D /* ViewController.m */,
 				2413E9FA1E57263600163F6D /* Main.storyboard */,
@@ -67,6 +84,8 @@
 				2413E9FF1E57263600163F6D /* LaunchScreen.storyboard */,
 				2413EA021E57263600163F6D /* Info.plist */,
 				2413E9F11E57263600163F6D /* Supporting Files */,
+				2413EA141E5735EC00163F6D /* MGOJMHeader.h */,
+				2413EA151E5735EC00163F6D /* MGOJMHeader.m */,
 			);
 			path = MGMPlayer;
 			sourceTree = "<group>";
@@ -74,9 +93,27 @@
 		2413E9F11E57263600163F6D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2413EA081E57318C00163F6D /* Resourse */,
 				2413E9F21E57263600163F6D /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2413EA081E57318C00163F6D /* Resourse */ = {
+			isa = PBXGroup;
+			children = (
+				2413EA091E57318C00163F6D /* O2jam */,
+			);
+			path = Resourse;
+			sourceTree = "<group>";
+		};
+		2413EA091E57318C00163F6D /* O2jam */ = {
+			isa = PBXGroup;
+			children = (
+				2413EA0A1E57319600163F6D /* o2ma100.ojm */,
+				2413EA0B1E57319600163F6D /* o2ma100.ojn */,
+			);
+			path = O2jam;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +177,9 @@
 			files = (
 				2413EA011E57263600163F6D /* LaunchScreen.storyboard in Resources */,
 				2413E9FE1E57263600163F6D /* Assets.xcassets in Resources */,
+				2413EA0D1E57319600163F6D /* o2ma100.ojn in Resources */,
 				2413E9FC1E57263600163F6D /* Main.storyboard in Resources */,
+				2413EA0C1E57319600163F6D /* o2ma100.ojm in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +193,9 @@
 				2413E9F91E57263600163F6D /* ViewController.m in Sources */,
 				2413E9F61E57263600163F6D /* AppDelegate.m in Sources */,
 				2413E9F31E57263600163F6D /* main.m in Sources */,
+				2413EA161E5735EC00163F6D /* MGOJMHeader.m in Sources */,
+				2413EA131E57335300163F6D /* MGOJNHeader.m in Sources */,
+				2413EA101E57332900163F6D /* MGOJNDecode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

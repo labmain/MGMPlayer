@@ -2,11 +2,12 @@
 //  ViewController.m
 //  MGMPlayer
 //
-//  Created by 王顺 on 2017/2/17.
+//  Created by Labmen on 2017/2/17.
 //  Copyright © 2017年 shun wang. All rights reserved.
 //
 
 #import "ViewController.h"
+#import "MGOJNHeader.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *coverImgV;
@@ -18,8 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.coverImgV.layer.cornerRadius = 150;
-    self.coverImgV.layer.masksToBounds = YES;
+    MGOJNHeader *ojnHeader = [MGOJNHeader getO2m100OJN];
+    
+    NSLog(@"ojnheader Title :%@", ojnHeader.description);
+    
 }
 
 
