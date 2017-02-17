@@ -110,7 +110,7 @@
 				TargetAttributes = {
 					2413E9ED1E57263600163F6D = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = W22828H56U;
+						DevelopmentTeam = YBKD5JM5S6;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -273,10 +273,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = W22828H56U;
+				DEVELOPMENT_TEAM = YBKD5JM5S6;
 				INFOPLIST_FILE = MGMPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.labmain.MGMPlayer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.labmain.MGPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -285,10 +286,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = W22828H56U;
+				DEVELOPMENT_TEAM = YBKD5JM5S6;
 				INFOPLIST_FILE = MGMPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.labmain.MGMPlayer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.labmain.MGPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

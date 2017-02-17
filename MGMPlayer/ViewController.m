@@ -9,21 +9,32 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+@property (weak, nonatomic) IBOutlet UIImageView *coverImgV;
+@property (weak, nonatomic) IBOutlet UIProgressView *songProgressView;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.coverImgV.layer.cornerRadius = 150;
+    self.coverImgV.layer.masksToBounds = YES;
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)playBtnClick:(id)sender {
+    
+}
+- (IBAction)stopBtnClick:(id)sender {
+    
+}
+- (IBAction)suspendBtnClick:(id)sender {
+    
+}
 
 @end
