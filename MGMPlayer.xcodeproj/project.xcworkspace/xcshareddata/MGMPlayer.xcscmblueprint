@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C562429B8D245A80FB2D8BEDC1C05CA9349C4980",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8CB78EAC9371BDCD562182D757C0CE9C9D56EDA4" : 9223372036854775807,
+    "C562429B8D245A80FB2D8BEDC1C05CA9349C4980" : 9223372036854775807,
+    "21480E3C9086B80DF1CD641E88B10BDAF06CEED0" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BB7E124F-6500-4A63-ABA8-31DBF97B3D85",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8CB78EAC9371BDCD562182D757C0CE9C9D56EDA4" : "MGMPlayer\/MGMPlayer\/Frameworks\/IDZPrecompiledOgg\/",
+    "C562429B8D245A80FB2D8BEDC1C05CA9349C4980" : "MGMPlayer\/",
+    "21480E3C9086B80DF1CD641E88B10BDAF06CEED0" : "MGMPlayer\/MGMPlayer\/Frameworks\/IDZPrecompiledVorbis\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MGMPlayer",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MGMPlayer.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/iosdevzone\/IDZPrecompiledVorbis",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "21480E3C9086B80DF1CD641E88B10BDAF06CEED0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/iosdevzone\/IDZPrecompiledOgg",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8CB78EAC9371BDCD562182D757C0CE9C9D56EDA4"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:labmain\/MGMPlayer.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C562429B8D245A80FB2D8BEDC1C05CA9349C4980"
+    }
+  ]
+}

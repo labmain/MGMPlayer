@@ -18,6 +18,11 @@
 		2413EA101E57332900163F6D /* MGOJNDecode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2413EA0F1E57332900163F6D /* MGOJNDecode.m */; };
 		2413EA131E57335300163F6D /* MGOJNHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2413EA121E57335300163F6D /* MGOJNHeader.m */; };
 		2413EA161E5735EC00163F6D /* MGOJMHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2413EA151E5735EC00163F6D /* MGOJMHeader.m */; };
+		2434BB791E5816AB00678E96 /* Ogg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2434BB781E5816AB00678E96 /* Ogg.framework */; };
+		2434BB7B1E58170100678E96 /* Vorbis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2434BB7A1E58170100678E96 /* Vorbis.framework */; };
+		2434BB861E5817E400678E96 /* IDZAQAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2434BB7F1E5817E400678E96 /* IDZAQAudioPlayer.m */; };
+		2434BB881E5817E400678E96 /* IDZOggVorbisFileDecoder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2434BB851E5817E400678E96 /* IDZOggVorbisFileDecoder.mm */; };
+		2434BB8B1E58186100678E96 /* Rondo_Alla_Turka.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 2434BB8A1E58186100678E96 /* Rondo_Alla_Turka.ogg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +44,16 @@
 		2413EA121E57335300163F6D /* MGOJNHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGOJNHeader.m; sourceTree = "<group>"; };
 		2413EA141E5735EC00163F6D /* MGOJMHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGOJMHeader.h; sourceTree = "<group>"; };
 		2413EA151E5735EC00163F6D /* MGOJMHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGOJMHeader.m; sourceTree = "<group>"; };
+		2434BB781E5816AB00678E96 /* Ogg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ogg.framework; path = IDZPrecompiledOgg/Ogg.framework; sourceTree = "<group>"; };
+		2434BB7A1E58170100678E96 /* Vorbis.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vorbis.framework; path = IDZPrecompiledVorbis/Vorbis.framework; sourceTree = "<group>"; };
+		2434BB7E1E5817E400678E96 /* IDZAQAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDZAQAudioPlayer.h; sourceTree = "<group>"; };
+		2434BB7F1E5817E400678E96 /* IDZAQAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDZAQAudioPlayer.m; sourceTree = "<group>"; };
+		2434BB801E5817E400678E96 /* IDZAudioDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDZAudioDecoder.h; sourceTree = "<group>"; };
+		2434BB811E5817E400678E96 /* IDZAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDZAudioPlayer.h; sourceTree = "<group>"; };
+		2434BB841E5817E400678E96 /* IDZOggVorbisFileDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDZOggVorbisFileDecoder.h; sourceTree = "<group>"; };
+		2434BB851E5817E400678E96 /* IDZOggVorbisFileDecoder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IDZOggVorbisFileDecoder.mm; sourceTree = "<group>"; };
+		2434BB891E5817F700678E96 /* IDZTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDZTrace.h; sourceTree = "<group>"; };
+		2434BB8A1E58186100678E96 /* Rondo_Alla_Turka.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = Rondo_Alla_Turka.ogg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2434BB791E5816AB00678E96 /* Ogg.framework in Frameworks */,
+				2434BB7B1E58170100678E96 /* Vorbis.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,21 +88,23 @@
 		2413E9F01E57263600163F6D /* MGMPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				2434BB7C1E5817E400678E96 /* Tools */,
 				2413E9F41E57263600163F6D /* AppDelegate.h */,
 				2413E9F51E57263600163F6D /* AppDelegate.m */,
 				2413EA0E1E57332900163F6D /* MGOJNDecode.h */,
 				2413EA0F1E57332900163F6D /* MGOJNDecode.m */,
 				2413EA111E57335300163F6D /* MGOJNHeader.h */,
 				2413EA121E57335300163F6D /* MGOJNHeader.m */,
+				2413EA141E5735EC00163F6D /* MGOJMHeader.h */,
+				2413EA151E5735EC00163F6D /* MGOJMHeader.m */,
 				2413E9F71E57263600163F6D /* ViewController.h */,
 				2413E9F81E57263600163F6D /* ViewController.m */,
+				2434BB691E58169600678E96 /* Frameworks */,
 				2413E9FA1E57263600163F6D /* Main.storyboard */,
 				2413E9FD1E57263600163F6D /* Assets.xcassets */,
 				2413E9FF1E57263600163F6D /* LaunchScreen.storyboard */,
 				2413EA021E57263600163F6D /* Info.plist */,
 				2413E9F11E57263600163F6D /* Supporting Files */,
-				2413EA141E5735EC00163F6D /* MGOJMHeader.h */,
-				2413EA151E5735EC00163F6D /* MGOJMHeader.m */,
 			);
 			path = MGMPlayer;
 			sourceTree = "<group>";
@@ -110,10 +129,42 @@
 		2413EA091E57318C00163F6D /* O2jam */ = {
 			isa = PBXGroup;
 			children = (
+				2434BB8A1E58186100678E96 /* Rondo_Alla_Turka.ogg */,
 				2413EA0A1E57319600163F6D /* o2ma100.ojm */,
 				2413EA0B1E57319600163F6D /* o2ma100.ojn */,
 			);
 			path = O2jam;
+			sourceTree = "<group>";
+		};
+		2434BB691E58169600678E96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2434BB7A1E58170100678E96 /* Vorbis.framework */,
+				2434BB781E5816AB00678E96 /* Ogg.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		2434BB7C1E5817E400678E96 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				2434BB7D1E5817E400678E96 /* IDZAQAudioPlayer */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		2434BB7D1E5817E400678E96 /* IDZAQAudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				2434BB891E5817F700678E96 /* IDZTrace.h */,
+				2434BB7E1E5817E400678E96 /* IDZAQAudioPlayer.h */,
+				2434BB7F1E5817E400678E96 /* IDZAQAudioPlayer.m */,
+				2434BB801E5817E400678E96 /* IDZAudioDecoder.h */,
+				2434BB811E5817E400678E96 /* IDZAudioPlayer.h */,
+				2434BB841E5817E400678E96 /* IDZOggVorbisFileDecoder.h */,
+				2434BB851E5817E400678E96 /* IDZOggVorbisFileDecoder.mm */,
+			);
+			path = IDZAQAudioPlayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +230,7 @@
 				2413E9FE1E57263600163F6D /* Assets.xcassets in Resources */,
 				2413EA0D1E57319600163F6D /* o2ma100.ojn in Resources */,
 				2413E9FC1E57263600163F6D /* Main.storyboard in Resources */,
+				2434BB8B1E58186100678E96 /* Rondo_Alla_Turka.ogg in Resources */,
 				2413EA0C1E57319600163F6D /* o2ma100.ojm in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,11 +243,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2413E9F91E57263600163F6D /* ViewController.m in Sources */,
+				2434BB861E5817E400678E96 /* IDZAQAudioPlayer.m in Sources */,
 				2413E9F61E57263600163F6D /* AppDelegate.m in Sources */,
 				2413E9F31E57263600163F6D /* main.m in Sources */,
 				2413EA161E5735EC00163F6D /* MGOJMHeader.m in Sources */,
 				2413EA131E57335300163F6D /* MGOJNHeader.m in Sources */,
 				2413EA101E57332900163F6D /* MGOJNDecode.m in Sources */,
+				2434BB881E5817E400678E96 /* IDZOggVorbisFileDecoder.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +370,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YBKD5JM5S6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MGMPlayer/Frameworks/IDZPrecompiledOgg",
+					"$(PROJECT_DIR)/MGMPlayer/Frameworks/IDZPrecompiledVorbis",
+				);
 				INFOPLIST_FILE = MGMPlayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -329,6 +388,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YBKD5JM5S6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MGMPlayer/Frameworks/IDZPrecompiledOgg",
+					"$(PROJECT_DIR)/MGMPlayer/Frameworks/IDZPrecompiledVorbis",
+				);
 				INFOPLIST_FILE = MGMPlayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -356,6 +420,7 @@
 				2413EA071E57263600163F6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

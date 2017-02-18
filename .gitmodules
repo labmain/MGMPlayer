@@ -1,0 +1,6 @@
+[submodule "MGMPlayer/Frameworks/IDZPrecompiledOgg"]
+	path = MGMPlayer/Frameworks/IDZPrecompiledOgg
+	url = https://github.com/iosdevzone/IDZPrecompiledOgg
+[submodule "MGMPlayer/Frameworks/IDZPrecompiledVorbis"]
+	path = MGMPlayer/Frameworks/IDZPrecompiledVorbis
+	url = https://github.com/iosdevzone/IDZPrecompiledVorbis
