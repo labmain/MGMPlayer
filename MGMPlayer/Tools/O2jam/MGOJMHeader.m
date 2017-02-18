@@ -28,8 +28,6 @@ struct M30_sample_header {
     int pcm_samples; // the total pcm samples on the ogg.
 };
 
-
-
 /*
  encryption_flag:
  1 – scramble1
@@ -39,6 +37,7 @@ struct M30_sample_header {
  16 – nami
  */
 @implementation MGOJMHeader
+#define kOggLocalPath @"/Data/OGG"
 + (void)getMGOJMHeader {
     struct M30_header m30Header;
     
@@ -52,7 +51,7 @@ struct M30_sample_header {
         NSData *OJNHanderData = [fileHandle readDataOfLength:sizeof(m30Header)];
         [OJNHanderData getBytes:&m30Header length:sizeof(m30Header)];
         
-        NSLog(@"%d",m30Header.encryption_flag);
+//        NSLog(@"%d",m30Header.encryption_flag);
         
         for (int i = 0; i < m30Header.sample_count; i++) {
             
@@ -63,7 +62,7 @@ struct M30_sample_header {
             [M30SampleData getBytes:&m30SampleHeader length:52];
             
             NSData *OGGData = [fileHandle readDataOfLength:m30SampleHeader.sample_size];
-            NSLog(@"%d",m30SampleHeader.sample_size);
+//            NSLog(@"%d",m30SampleHeader.sample_size);
             
             NSUInteger len = [OGGData length];
             Byte *byteData = (Byte*)[OGGData bytes];
@@ -87,8 +86,17 @@ struct M30_sample_header {
                 value += 1000;
             }
             NSString *fileName = [NSString stringWithFormat:@"%d",value];
-            NSString *filePath = [NSString stringWithFormat:@"Data/OGG/%@.ogg",fileName];
-            [oggData writeToFile:[NSHomeDirectory() stringByAppendingPathComponent:filePath] atomically:YES];
+            NSString *filePath = [NSString stringWithFormat:@"/Documents/Data/OGG/%@.ogg",fileName];
+            
+            // 检查路径
+            NSString *path = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingString:kOggLocalPath];
+            BOOL exist = [[NSFileManager defaultManager] fileExistsAtPath:path];
+            if (!exist) {
+                NSString *path = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingString:kOggLocalPath];
+                [[NSFileManager defaultManager] createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:nil];
+            }
+            NSString *writeFilePath = [NSHomeDirectory() stringByAppendingPathComponent:filePath];
+            [oggData writeToFile:writeFilePath atomically:YES];
         }
     }
 

@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+@class MGOJNHeaderNotePackage;
+@class MGOJNHeader;
 @interface MGOJNDecode : NSObject
+@property (nonatomic, copy) NSString *songID;
+@property (nonatomic, strong) MGOJNHeader *ojnHeader;
+@property (nonatomic, strong) NSArray<MGOJNHeaderNotePackage *> *notePackageArray;
 
++ (MGOJNDecode *)ojnDecodeWithSongID:(NSString *)songID;
 @end

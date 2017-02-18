@@ -112,35 +112,9 @@ struct note_event {
  */
 typedef struct header ojn_header;  //定义一个别名
 #define MAXCOUNT 4095
-
-@interface MGOJNHeader ()
-@property (nonatomic, assign) int songid;
-@property (nonatomic, copy) NSString *signature;
-@property (nonatomic, assign) float encode_version;
-@property (nonatomic, assign) int genre;
-@property (nonatomic, assign) float bpm;
-@property (nonatomic, strong) NSArray<NSNumber *> *level;
-@property (nonatomic, strong) NSArray<NSNumber *> *event_count;
-@property (nonatomic, strong) NSArray<NSNumber *> *note_count;
-@property (nonatomic, strong) NSArray<NSNumber *> *measure_count;
-@property (nonatomic, strong) NSArray<NSNumber *> *package_count;
-@property (nonatomic, assign) short old_encode_version;
-@property (nonatomic, assign) short old_songid;
-@property (nonatomic, copy) NSString *old_genre;
-@property (nonatomic, assign) int bmp_size;
-@property (nonatomic, assign) int old_file_version;
-@property (nonatomic, copy) NSString *title;
-@property (nonatomic, copy) NSString *artist;
-@property (nonatomic, copy) NSString *noter;
-@property (nonatomic, copy) NSString *ojm_file;
-@property (nonatomic, assign) int cover_size;
-@property (nonatomic, strong) NSArray<NSNumber *> *time;
-@property (nonatomic, strong) NSArray<NSNumber *> *note_offset;
-@property (nonatomic, assign) int cover_offset;
-@end
 @implementation MGOJNHeader
 
-+ (instancetype)getO2m100OJN {
++ (MGOJNHeader *)getMGOJNHeader {
     ojn_header ojnInfoBuffer;//定义一个ojn_header的变量
     
     NSString *fileName = [[NSBundle mainBundle] pathForResource:@"o2ma100.ojn" ofType:nil];
@@ -149,8 +123,7 @@ typedef struct header ojn_header;  //定义一个别名
     
     MGOJNHeader *ojnheader = [[MGOJNHeader alloc] init];
     
-    
-    NSLog(@"%lu",sizeof(ojnheader));
+//    NSLog(@"%lu",sizeof(ojnheader));
     if (fileHandle) {
         NSData *OJNHanderData = [fileHandle readDataOfLength:sizeof(ojn_header)];
         [OJNHanderData getBytes:&ojnInfoBuffer length:sizeof(ojn_header)];
@@ -228,4 +201,20 @@ typedef struct header ojn_header;  //定义一个别名
     }
     return nil;
 }
+@end
+
+@implementation MGOJNHeaderNotePackage
+
+
+
+@end
+@implementation MGOJNPackageHeader
+
+
+
+@end
+@implementation MGOJNNoteEvent
+
+
+
 @end

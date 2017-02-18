@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "MGOJNHeader.h"
+#import "MGOJMHeader.h"
+#import "MGOJNDecode.h"
 
 #import "IDZAQAudioPlayer.h"
 
@@ -23,16 +25,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    MGOJNHeader *ojnHeader = [MGOJNHeader getO2m100OJN];
+    //    MGOJNHeader *ojnHeader = [MGOJNHeader getMGOJNHeader];
     
-    NSLog(@"ojnheader Title :%@", ojnHeader.description);
+        [MGOJMHeader getMGOJMHeader];
     
+    
+    MGOJNDecode *ojnDecode = [MGOJNDecode ojnDecodeWithSongID:nil];
+    NSLog(@"%@",ojnDecode.ojnHeader.title);
     NSError* error = nil;
     NSURL* oggUrl = [[NSBundle mainBundle] URLForResource:@"Rondo_Alla_Turka" withExtension:@".ogg"];
     IDZOggVorbisFileDecoder* decoder = [[IDZOggVorbisFileDecoder alloc] initWithContentsOfURL:oggUrl error:&error];
     NSLog(@"Ogg Vorbis file duration is %g", decoder.duration);
     self.player = [[IDZAQAudioPlayer alloc] initWithDecoder:decoder error:nil];
-
+    
     [self.player prepareToPlay];
 }
 
