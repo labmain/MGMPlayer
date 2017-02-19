@@ -7,9 +7,9 @@
 //
 
 #import "ViewController.h"
-#import "MGOJNHeader.h"
-#import "MGOJMHeader.h"
-#import "MGOJNDecode.h"
+#import "OJNHeader.h"
+#import "OJMHeader.h"
+#import "OJNDecode.h"
 
 #import "IDZAQAudioPlayer.h"
 
@@ -27,18 +27,19 @@
     
     //    MGOJNHeader *ojnHeader = [MGOJNHeader getMGOJNHeader];
     
-        [MGOJMHeader getMGOJMHeader];
-    
-    
-    MGOJNDecode *ojnDecode = [MGOJNDecode ojnDecodeWithSongID:nil];
-    NSLog(@"%@",ojnDecode.ojnHeader.title);
-    NSError* error = nil;
-    NSURL* oggUrl = [[NSBundle mainBundle] URLForResource:@"Rondo_Alla_Turka" withExtension:@".ogg"];
-    IDZOggVorbisFileDecoder* decoder = [[IDZOggVorbisFileDecoder alloc] initWithContentsOfURL:oggUrl error:&error];
-    NSLog(@"Ogg Vorbis file duration is %g", decoder.duration);
-    self.player = [[IDZAQAudioPlayer alloc] initWithDecoder:decoder error:nil];
-    
-    [self.player prepareToPlay];
+//    [MGOJNHeader getMGOJNHeader];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [MGOJMHeader getMGOJMHeader];
+        OJNDecode *ojnDecode = [OJNDecode ojnDecodeWithSongID:nil];
+        NSLog(@"%@",ojnDecode.ojnHeader.title);
+    });
+//    NSError* error = nil;
+//    NSURL* oggUrl = [[NSBundle mainBundle] URLForResource:@"Rondo_Alla_Turka" withExtension:@".ogg"];
+//    IDZOggVorbisFileDecoder* decoder = [[IDZOggVorbisFileDecoder alloc] initWithContentsOfURL:oggUrl error:&error];
+//    NSLog(@"Ogg Vorbis file duration is %g", decoder.duration);
+//    self.player = [[IDZAQAudioPlayer alloc] initWithDecoder:decoder error:nil];
+//    
+//    [self.player prepareToPlay];
 }
 
 

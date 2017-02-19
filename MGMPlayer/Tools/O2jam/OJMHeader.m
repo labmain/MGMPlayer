@@ -6,7 +6,7 @@
 //  Copyright © 2017年 shun wang. All rights reserved.
 //
 
-#import "MGOJMHeader.h"
+#import "OJMHeader.h"
 struct M30_header {
     char signature[4]; // "M30"
     int file_format_version;
@@ -36,7 +36,7 @@ struct M30_sample_header {
  8 – decrypt
  16 – nami
  */
-@implementation MGOJMHeader
+@implementation OJMHeader
 #define kOggLocalPath @"/Data/OGG"
 + (void)getMGOJMHeader {
     struct M30_header m30Header;
@@ -98,6 +98,7 @@ struct M30_sample_header {
             NSString *writeFilePath = [NSHomeDirectory() stringByAppendingPathComponent:filePath];
             [oggData writeToFile:writeFilePath atomically:YES];
         }
+        [fileHandle closeFile];
     }
 
 }

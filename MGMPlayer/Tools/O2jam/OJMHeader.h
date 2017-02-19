@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MGOJMHeader : NSObject
+@interface OJMHeader : NSObject
 + (void)getMGOJMHeader;
 @end

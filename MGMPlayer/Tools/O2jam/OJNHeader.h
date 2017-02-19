@@ -1,5 +1,5 @@
 //
-//  MGOJNHeader.h
+//  OJNHeader.h
 //  MGMPlayer
 //
 //  Created by Labmen on 2017/2/17.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MGOJNHeader : NSObject
+@interface OJNHeader : NSObject
 @property (nonatomic, assign) int songid;
 @property (nonatomic, copy) NSString *signature;
 @property (nonatomic, assign) float encode_version;
@@ -61,17 +61,17 @@
 @property (nonatomic, assign) int cover_offset;
 
 
-+ (MGOJNHeader *)getMGOJNHeader;
++ (OJNHeader *)getOJNHeader;
 
 @end
 
-@class MGOJNPackageHeader;
-@class MGOJNNoteEvent;
-@interface MGOJNHeaderNotePackage : NSObject
-@property (nonatomic, strong) MGOJNPackageHeader *packageHeader;
-@property (nonatomic, strong) NSArray<MGOJNNoteEvent *> *noteEventArray;
+@class OJNPackageHeader;
+@class OJNNoteEvent;
+@interface OJNHeaderNotePackage : NSObject
+@property (nonatomic, strong) OJNPackageHeader *packageHeader;
+@property (nonatomic, strong) NSArray<OJNNoteEvent *> *noteEventArray;
 @end
-@interface MGOJNPackageHeader : NSObject
+@interface OJNPackageHeader : NSObject
 
 /**
  标明这个package是属于第几小节线
@@ -89,7 +89,7 @@
 @property (nonatomic, assign) short events;
 @end
 
-@interface MGOJNNoteEvent : NSObject
+@interface OJNNoteEvent : NSObject
 /**
   value 表示Key音列表的索引值 比如这个值为17 那么key表索引值=17的地方如果有放一个"abc.ogg"的音频key 那么击打时就会自动播放
  */
