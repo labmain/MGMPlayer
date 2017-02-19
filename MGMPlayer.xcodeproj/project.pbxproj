@@ -23,6 +23,7 @@
 		2434BB941E581B2900678E96 /* OJNDecode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2434BB901E581B2900678E96 /* OJNDecode.m */; };
 		2434BB951E581B2900678E96 /* OJNHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2434BB921E581B2900678E96 /* OJNHeader.m */; };
 		2434BB991E581B3100678E96 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2434BB981E581B3100678E96 /* ViewController.m */; };
+		243935B81E598E3100721E78 /* OJMDecode.m in Sources */ = {isa = PBXBuildFile; fileRef = 243935B71E598E3100721E78 /* OJMDecode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,8 @@
 		2434BB921E581B2900678E96 /* OJNHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OJNHeader.m; sourceTree = "<group>"; };
 		2434BB971E581B3100678E96 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2434BB981E581B3100678E96 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		243935B61E598E3100721E78 /* OJMDecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OJMDecode.h; sourceTree = "<group>"; };
+		243935B71E598E3100721E78 /* OJMDecode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OJMDecode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +169,8 @@
 			children = (
 				2434BB8D1E581B2900678E96 /* OJMHeader.h */,
 				2434BB8E1E581B2900678E96 /* OJMHeader.m */,
+				243935B61E598E3100721E78 /* OJMDecode.h */,
+				243935B71E598E3100721E78 /* OJMDecode.m */,
 				2434BB911E581B2900678E96 /* OJNHeader.h */,
 				2434BB921E581B2900678E96 /* OJNHeader.m */,
 				2434BB8F1E581B2900678E96 /* OJNDecode.h */,
@@ -261,6 +266,7 @@
 				2434BB861E5817E400678E96 /* IDZAQAudioPlayer.m in Sources */,
 				2434BB941E581B2900678E96 /* OJNDecode.m in Sources */,
 				2434BB991E581B3100678E96 /* ViewController.m in Sources */,
+				243935B81E598E3100721E78 /* OJMDecode.m in Sources */,
 				2413E9F61E57263600163F6D /* AppDelegate.m in Sources */,
 				2434BB951E581B2900678E96 /* OJNHeader.m in Sources */,
 				2413E9F31E57263600163F6D /* main.m in Sources */,

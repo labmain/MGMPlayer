@@ -7,48 +7,7 @@
 //
 
 #import "OJNHeader.h"
-/*
- *定义一个header类型
- */
-struct header {
-    int songid;
-    char signature[4];
-    float encode_version;
-    int genre;
-    float bpm; // 初始BPM
-    short level[4]; // 歌曲的3个等级  只使用前3个 范围0~65535
-    int event_count[3];
-    int note_count[3];
-    int measure_count[3]; // 3个难度各自有多少小节数
-    int package_count[3]; // 标记包的数量 3难度，package代表一个小节中的某一列
-    short old_encode_version;
-    short old_songid;
-    char old_genre[20];
-    int bmp_size; // 缩略图图像的大小
-    int old_file_version;
-    char title[64]; // 歌名
-    char artist[32]; // 作曲家名
-    char noter[32]; // noter名
-    char ojm_file[32]; // 相关联的ojm文件名，一般o2maxxxx.ojm
-    int cover_size;//这是封面图片的大小，以字节为单位
-    int time[3]; // 3 难度歌曲时长 单位是秒
-    int note_offset[3];// 容易，普通，困难 的 note 位置
-    int cover_offset;
-};
-/*
- genre:
- 0	Ballad
- 1	Rock
- 2	Dance
- 3	Techno
- 4	Hip-hop
- 5	Soul/R&B
- 6	Jazz
- 7	Funk
- 8	Classical
- 9	Traditional
- 10	Etc
- */
+
 typedef struct header ojn_header;  //定义一个别名
 @implementation OJNHeader
 
