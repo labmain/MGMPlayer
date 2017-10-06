@@ -19,6 +19,7 @@
 @interface OJMSoundPart : NSObject
 @property (nonatomic, copy) NSString *ojmLocalPath;
 @property (nonatomic, assign) int soundPartID;
+@property (nonatomic, assign) float playOffset; // 播放的位置
 @property (nonatomic, assign) long long soundStartOffset;
 @property (nonatomic, assign) long long soundEndOffset;
 

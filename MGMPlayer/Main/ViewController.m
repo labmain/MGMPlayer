@@ -26,6 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    OJNDecode *ojnDecode = [OJNDecode ojnDecodeWithSongID:@""];
     OJMDecode *ojmDecode = [OJMDecode getOJMSounds];
     
     OJMSoundPart *backgroundMuisc = [ojmDecode.soundArray lastObject];

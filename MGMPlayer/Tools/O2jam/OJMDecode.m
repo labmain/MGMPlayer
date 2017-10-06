@@ -33,7 +33,7 @@
                 }
                 [M30SampleData getBytes:&m30SampleHeader length:52];
                 
-                int value = m30SampleHeader.ref;
+                int value = m30SampleHeader.ref + 1;
                 
                 OJMSoundPart *soundPart = [[OJMSoundPart alloc] init];
                 soundPart.ojmLocalPath = fileName;
